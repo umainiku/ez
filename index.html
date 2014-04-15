@@ -1,0 +1,144 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--<meta http-equiv="Pragma" content="no-cache">-->
+<meta name="author" content="niku">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@office_onze">
+<meta name="twitter:title" content="オンズ">
+<title>エオルゼア時計</title>
+<link rel="icon" href="/icon/favicon.ico">
+<link rel="stylesheet" href="./css/style.css?var=18">
+<link rel="stylesheet" href="./css/checkbox.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="./js/main.js?var=18"></script>
+<script type="text/javascript" src="./js/eorzeaclock.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16994094-18', 'dropboxusercontent.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="wrap">
+<header id="head" role="banner">
+  <h1>
+    <a href="http://jp.finalfantasyxiv.com/lodestone/freecompany/9233505136016360021/top">
+  <img src="./image/scenes/bande.png" style="width: 100px;"></a></h1>
+  <br />Tonberry Free Company "BANDE" presents
+</header>
+<div class="content">
+
+
+
+<section id="main" role="main">
+
+<div id="demo">
+<h2>エオルゼア時計。</h2>
+
+
+<h3>Version.2</h3>
+<div class="clock" id="realTime"></div>
+
+<h3>Version.5 エオルゼア時間</h3>
+
+<div class="clockarea">
+  <span id="gameTime" style="font-weight:bold;"></span><br />
+
+  <table class="gameTimeTable" >
+    <tr>
+      <td>
+        <!--月  -->
+        ・<span id="month_name" style="font-weight:bold;"></span>
+        <br />
+      </td>
+      <td>
+        <img id="image_month_element" class="element_attribute">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <!--日  -->
+        ・<span id="day_name" style="font-weight:bold;"></span>
+        &nbsp;[<span id="day"></span>日]<br />
+      </td>
+      <td>
+        <img id="image_day_element" class="element_attribute">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <!--刻  -->
+        ・<span id="koku_name" style="font-weight:bold;"></span>
+        &nbsp;[<span id="hour"></span>時]
+      </td>
+      <td>
+        <img id="image_koku_element" class="element_attribute">
+      </td>
+    </tr>
+  </table>
+
+  ・次の刻まで地球時間でアト<span id="last_minute" style="font-weight:bold; color: #FF0000"></span>
+
+  <br />
+
+  <table class="atma">
+    <tr><th>check</th><th>守護月</th><th>ドロップ率</th><th>属性</th><th>名称</th><th>場所</th></tr>
+    <tr id="m1" ><td><input type="checkbox" id="checkbox-1" class="regular-checkbox big-checkbox" /><label for="checkbox-1"></label></td><td>1月</td><td class="percent" ><span id="drop1"></span>％</td><td><img src="./image/elemental/5.png" class="element_attribute">&nbsp;氷属性</td><td>磨羯のアートマ</td><td>東部森林</td></tr>
+    <tr id="m2" ><td><input type="checkbox" id="checkbox-2" class="regular-checkbox big-checkbox" /><label for="checkbox-2"></label></td><td>2月</td><td class="percent" ><span id="drop2" ></span>％</td><td><img src="./image/elemental/5.png" class="element_attribute">&nbsp;氷属性</td><td>宝瓶のアートマ</td><td>高地ラノシア</td></tr>
+    <tr id="m3" ><td><input type="checkbox" id="checkbox-3" class="regular-checkbox big-checkbox" /><label for="checkbox-3"></label></td><td>3月</td><td class="percent" ><span id="drop3" ></span>％</td><td><img src="./image/elemental/6.png" class="element_attribute">&nbsp;水属性</td><td>双魚のアートマ</td><td>低地ラノシア</td></tr>
+    <tr id="m4" ><td><input type="checkbox" id="checkbox-4" class="regular-checkbox big-checkbox" /><label for="checkbox-4"></label></td><td>4月</td><td class="percent" ><span id="drop4" ></span>％</td><td><img src="./image/elemental/6.png" class="element_attribute">&nbsp;水属性</td><td>白羊のアートマ</td><td>中央ラノシア</td></tr>
+    <tr id="m5" ><td><input type="checkbox" id="checkbox-5" class="regular-checkbox big-checkbox" /><label for="checkbox-5"></label></td><td>5月</td><td class="percent" ><span id="drop5" ></span>％</td><td><img src="./image/elemental/1.png" class="element_attribute">&nbsp;風属性</td><td>金牛のアートマ</td><td>東ザナラーン</td></tr>
+    <tr id="m6" ><td><input type="checkbox" id="checkbox-6" class="regular-checkbox big-checkbox" /><label for="checkbox-6"></label></td><td>6月</td><td class="percent" ><span id="drop6" ></span>％</td><td><img src="./image/elemental/1.png" class="element_attribute">&nbsp;風属性</td><td>双子のアートマ</td><td>西ザナラーン</td></tr>
+    <tr id="m7" ><td><input type="checkbox" id="checkbox-7" class="regular-checkbox big-checkbox" /><label for="checkbox-7"></label></td><td>7月</td><td class="percent" ><span id="drop7" ></span>％</td><td><img src="./image/elemental/2.png" class="element_attribute">&nbsp;雷属性</td><td>巨蟹のアートマ</td><td>西ラノシア</td></tr>
+    <tr id="m8" ><td><input type="checkbox" id="checkbox-8" class="regular-checkbox big-checkbox" /><label for="checkbox-8"></label></td><td>8月</td><td class="percent" ><span id="drop8" ></span>％</td><td><img src="./image/elemental/2.png" class="element_attribute">&nbsp;雷属性</td><td>獅子のアートマ</td><td>外地ラノシア</td></tr>
+    <tr id="m9" ><td><input type="checkbox" id="checkbox-9" class="regular-checkbox big-checkbox" /><label for="checkbox-9"></label></td><td>9月</td><td class="percent" ><span id="drop9" ></span>％</td><td><img src="./image/elemental/3.png" class="element_attribute">&nbsp;火属性</td><td>処女のアートマ</td><td>中央森林</td></tr>
+    <tr id="m10" ><td><input type="checkbox" id="checkbox-10" class="regular-checkbox big-checkbox" /><label for="checkbox-10"></label></td><td>10月</td><td class="percent" ><span id="drop10" ></span>％</td><td><img src="./image/elemental/3.png" class="element_attribute">&nbsp;火属性</td><td>天秤のアートマ</td><td>中央ザナラーン</td></tr>
+    <tr id="m11" ><td><input type="checkbox" id="checkbox-11" class="regular-checkbox big-checkbox" /><label for="checkbox-11"></label></td><td>11月</td><td class="percent" ><span id="drop11" ></span>％</td><td><img src="./image/elemental/4.png" class="element_attribute">&nbsp;土属性</td><td>天蠍のアートマ</td><td>南ザナラーン</td></tr>
+    <tr id="m12" ><td><input type="checkbox" id="checkbox-12" class="regular-checkbox big-checkbox" /><label for="checkbox-12"></label></td><td>12月</td><td class="percent" ><span id="drop12" ></span>％</td><td><img src="./image/elemental/4.png" class="element_attribute">&nbsp;土属性</td><td>人馬のアートマ</td><td>北部森林</td></tr>
+  </table>
+
+  <br />
+  ※ 属性月はドロップ率に寄与しない仕様で動作中
+  <br />
+  <br />
+
+</div>
+
+
+<h3>Version.4.1 エオルゼア時間(ez)</h3>
+<div class="clock">
+<div id="eorzeaclock">&nbsp;</div><script type="text/javascript">EorzeaClock()</script>
+</div>
+
+
+
+
+
+
+</div>
+</section>
+
+<footer id="foot" role="contentinfo">
+<p>エオルゼア時間は閲覧しているPCの時間から計算しています。ズレているときはPC時間を正してください。<br /></p>
+<p>うまく動かないときはページを再読み込みしてみてください。<br /></p>
+</footer>
+</div>
+<div id="BO">
+</div>
+</div>
+
+</body>
+</html>

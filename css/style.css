@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+/*
+Theme Name: ONZE
+Theme URI: http://on-ze.com/
+Author: ONZE
+Author URI: http:/on-ze.com
+Description: Design by <a href="http://on-ze.com" title="ONZE">ONZE</a>.
+Version: 1.0
+Tags : html5, CSS3, White, Emerald
+Text Domain: onze
+*/
+
+/******************/
+
+* {
+margin:0;
+padding:0;
+border:none;
+list-style:none;
+font-style:normal;
+font-weight:lighter;
+outline:none;
+text-decoration:none;
+}
+
+/******************/
+
+html {
+font-size:62.5%;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	text-size-adjust:100%;
+}
+
+body {
+background:#fff;
+color:#666;
+display:table;
+font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size:10px;
+font-size:1.0rem;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+line-height:1;
+margin:0 auto;
+text-align:center;
+}
+
+
+hr {
+border-top:1px solid #ccc;
+margin:30px 0;
+clear:both;
+display:block;
+}
+
+.display-none {display:none;}
+
+#TO,
+#BO {
+height:0;
+overflow:hidden;
+display:block;
+clear:both;
+}
+
+#wrap {padding:0 30px; display:table-cell; background-color:rgba(255,255,255,0.8); line-height:1.5;}
+
+#head,
+#foot,
+#main {clear:both; display:block;}
+
+#head {padding:20px 0; border-bottom:1px solid #ccc; margin-bottom:50px;}
+#main {text-align:left; font-size:13px; font-size:1.3em; margin-bottom:50px;}
+#foot {padding:20px 0; border-top:1px solid #ccc; clear:both;}
+
+#demo {clear:both; display:block; padding:20px;}
+
+
+
+#main a {color:#1aa;}
+#main a:hover {color:#fff; background-color:#1aa;}
+
+
+
+/******************/
+
+#head h1 img {
+	-webkit-animation:rotateh1 1.2s;
+	-webkit-animation-iteration-count:2;
+	-moz-animation:rotateh1 1.2s;
+	-moz-animation-iteration-count:2;
+	-ms-animation:rotateh1 1.2s;
+	-ms-animation-iteration-count:2;
+	-o-animation:rotateh1 1.2s;
+	-o-animation-iteration-count:2;
+	animation:rotateh1 1.2s;
+	animation-iteration-count:2;
+}
+@-webkit-keyframes rotateh1 {
+	0% {-webkit-transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes rotateh1 {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+@-ms-keyframes rotateh1 {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+@-o-keyframes rotateh1 {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+@keyframes rotateh1 {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+/******************/
+
+#foot {font-size:12px; font-size:1.2rem;}
+
+#foot a {color:#1aa;}
+#foot a:hover {color:#fff; background-color:#1aa;}
+
+/******************/
+
+h2 {margin-bottom:50px;}
+h3 {margin-bottom:20px;}
+
+p {margin-bottom:30px;}
+
+
+ul {margin-bottom:30px;}
+
+ul li:last-child,
+ol li:last-child {margin-bottom:0}
+
+ul li {display:block;}
+
+ul li a {display:block;}
+
+ul li a:hover {}
+
+dl {margin-bottom:20px;}
+dl dt {margin-bottom:5px; font-size:1.1em; font-weight:bold;}
+dl dd {margin-bottom:20px;}
+
+
+pre {
+margin-bottom:30px;
+padding:0 20px;
+background:#f6f6f6;
+border:1px solid #ccc;
+overflow-x:scroll;
+}
+
+pre code {
+font-family:Consolas, Courier, sans-serif;
+word-break:normal;
+word-wrap:normal;
+white-space:pre;
+padding:0;
+margin:0;
+}
+
+
+input[type=submit] {background-color:#f6f6f6; border:1px solid #ccc; color:#666;}
+input[type=submit]:hover {background-color:#1aa; border:1px solid #1aa; color:#fff;}
+
+.content {
+margin: auto;
+}
+
+.clock {
+padding:0.5em 30px;
+background-color:#f6f6f6;
+font-size:18px;
+font-weight:bold;
+margin-bottom:30px;
+}
+
+.clockarea {
+padding:1em 30px;
+background-color:#f6f6f6;
+font-size:18px;
+/*font-weight:bold;*/
+margin-bottom:30px;
+}
+
+img.element_attribute {
+    height: 30px;
+    margin-bottom:-5px;
+}
+
+table.atma{
+    border-top:1px solid #777;
+    border-left:1px solid #777;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:#f6f6f6;
+    empty-cells:show;
+}
+.atma th{
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+    background-color:lightblue;
+    background-position:left top;
+    padding:0.3em 1em;
+    text-align:center;
+}
+.atma td{
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+    padding:0.3em 1em;
+}
+
+table.gameTimeTable{
+    background-color:#f6f6f6;
+    border:none;
+}
+
+
+
+.medium{
+    background-color: #FFF34F;
+    color:#000000;
+}
+.hot{
+    background-color: #FFAA4F;
+    color:#FFFFFF;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 35px #ff00de;
+}
+.extraHot{
+    background-color: #FF4A69;
+    color:#FFFFFF;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 40px #ff00de;
+}
+
+table.atma td.percent{
+    text-align:right;
+}
+
+/*TD {font-size:18px}*/
+
+TD {
+    font-size:18px;
+}
+
+@-webkit-keyframes anime_atma_change{
+	0%	{}
+	100%	{
+		text-shadow:
+		0 20px #FFDD7F,
+		0 -20px #FFDD7F;
+		}
+}
+.anime_atma_change{
+	font:15px bold;
+	color:#000;
+	padding:10px;
+	text-align:center;
+	-webkit-animation:anime_atma_change 1s infinite alternate linear;
+}
+/* end ************/
+/******************/
+/******************/
+
+
